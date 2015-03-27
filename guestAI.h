@@ -6,6 +6,13 @@
 //  Copyright (c) 2015 simon. All rights reserved.
 //
 
+/*
+ *
+ *
+ *
+ *
+ */
+
 #ifndef __Connect_Four__guestAI__
 #define __Connect_Four__guestAI__
 
