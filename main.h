@@ -50,7 +50,7 @@ void setup_player(GlobalSetup *setup, PlayerSetup *setup_X, PlayerSetup *setup_O
 char display_control_panel(GlobalSetup *setup);
 void switch_player(int *role_player);
 void set_difficulty(Difficulty *difficulty);
-const char *get_difficulty(Difficulty difficulty);
+char *get_difficulty(Difficulty difficulty);
 void set_title(GlobalSetup *setup);
 void set_board_size(GlobalSetup *setup);
 void set_winning_count(GlobalSetup *setup);
@@ -60,5 +60,13 @@ void check_move_validity(Board *board, int last_move, GlobalSetup *setup);
 void display_board(Board *board, GlobalSetup *setup);
 int check_win_or_tie(Board *board, GlobalSetup *setup);
 int check_winner(Board *board, GlobalSetup *setup);
+
+static char* string_beginner = "Beginner";
+static char* string_easy = "Easy";
+static char* string_normal = "Normal";
+static char* string_hard = "Hard";
+static char* string_insane = "Insane";
+static char* string_NA = "N/A";
+
 
 #endif

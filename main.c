@@ -233,27 +233,27 @@ void set_difficulty(Difficulty *difficulty)
     }
 }
 
-const char *get_difficulty(Difficulty difficulty)
+char *get_difficulty(Difficulty difficulty)
 {
     char *strDifficult;
     switch (difficulty) {
         case Beginner:
-            strDifficult = "Beginner";
+            strDifficult = string_beginner;
             break;
         case Easy:
-            strDifficult = "Easy";
+            strDifficult = string_easy;
             break;
         case Normal:
-            strDifficult = "Normal";
+            strDifficult = string_normal;
             break;
         case Hard:
-            strDifficult = "Hard";
+            strDifficult = string_hard;
             break;
         case Insane:
-            strDifficult = "Insane";
+            strDifficult = string_insane;
             break;
         default:
-            strDifficult = "N/A";
+            strDifficult = string_NA;
             break;
     }
     return strDifficult;
